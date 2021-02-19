@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--jQuery에 대한 정의 문서를 연동하겠다는 선언-->
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/09743b710b.js" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        //문서가 준비가 완료되면, 함수구문(function)내부의 어떤 실행문을 실행하라는 이벤트를 발생시킴
+        //f(x) = x +1 ;
+        //function(x){x + 1} ->{}의 의미는 일반 수학의 함수에서 "="을 의미
+        //$(달러기호)의 의미는 이곳부터 jQuery문서에 대한 내용이 들어올 것이다라는 정의가 됨 달러기호대신 jQuery라고 써도 됨 
+        $(document).ready(function(){
+            //사용자가 특정 대상물을 클릭했을 때 이벤트를 발생
+            $(".top_btn").click(function(){
+                $("html, body").animate({scrollTop:$("#header").offset().top}, 1000);
+                return false; //<a>가 포함된 공간일 경우 href의 속성이 우선적으로 작동되는데, 이 우선 작동을 멈추게만들어준다.
+
+                //HTML 문서를 감싸는 최상위 공간 <html>태그와 실제 브라우저 화면상을 구성하는 최상위 공간<body>에 애니메이션기능을 부여하겠다는 선언. 현재 스크롤바의 위치를 브라우저 상단으로부터 지정한 장소의 상단에 맞춰주겠다는 선언(애니메이션 작동시간: 1000milli second = 1초)
+            })
+
+            $(".story_btn").click(function(){
+                $("html, body").animate({scrollTop:$("#story").offset().top}, 1000);
+                return false;
+            });
+
+            $(".special_btn").click(function(){
+                $("html, body").animate({scrollTop:$("#special").offset().top}, 1000);
+                return false;
+            });
+
+            $(".dishes_btn").click(function(){
+                $("html, body").animate({scrollTop:$("#dishes").offset().top}, 1000);
+                return false;
+            });
+
+            $(".services_btn").click(function(){
+                $("html, body").animate({scrollTop:$("#service").offset().top}, 1000);
+                return false;
+            });
+            $(".offer_btn").click(function(){
+                $("html, body").animate({scrollTop:$("#offer").offset().top}, 1000);
+                return false;
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="top"><!--w100%; h30px; 검정색 라인-->
+            <div class="wrap"><!--w:1160px; 중앙 공간-->
+                <div class="info"><!--주소, 전화번호 float:left;-->
+                    <ul>
+                        <li><i class="far fa-map"></i>&nbsp;Jl. Little Kyoto SA, 01 64521</li>
+                        <li><i class="fas fa-phone-square-alt"></i>&nbsp;023 5608 4669
+                        </li>
+                    </ul>
+                </div>
+                <div class="sns"><!--SNS 아이콘 float:right;-->
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main"><!--w:100%; 배경 이미지-->
+            <div class="dark"><!--w:100%; 암막처리-->
+                <div class="wrap"><!--w:1160px; h:66px; 중앙 공간-->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="로고">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="story_btn"><a href="#story">OUR STORY</a></li>
+                            <li class="special_btn"><a href="#special">SPECIAL DISHES</a></li>
+                            <li class="dishes_btn"><a href="#dishes">DISHES</a></li>
+                            <li class="services_btn"><a href="#service">SERVICE</a></li>
+                        </ul>
+                        <div class="reseve_btn">
+                            <a href="#">RESERVATION</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_title">
+                    <div class="txt_center">
+                        <h1 class="impact wow fadeInDown">Premium food at affordable price.</h1>
+                        <p class="wow fadeInUp">A truly unique Danish food experience, you can get at lunch time in Kyoto</p>
+                        <ul>
+                            <li class="wow fadeInLeft"><a href="#">learn more</a></li>
+                            <li class="wow fadeInRight"><a href="#">get the app</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="story">
+        <div class="wrap">
+            <div class="title">
+                <h2 class="impact">discover <span class="impact">our story</span></h2>
+                <p>HI, WELCOME TO KULINER</p>
+            </div>
+            <div class="cont">
+                <div class="img_part"></div> 
+                <div class="txt_part">
+                    <p>In a country where understatement and simplicity reign, the unpretentious smorrebrod is a national dish. There are countless variations, from minimal to lavish, but all reflect straightforward Scandinavian sensibilities: simple, honest, local ingredients attractively presented with little waste
+                    </p>
+                    <a class="special_btn" href="#"><img src="img/separator-img.png" alt=""></a>
+                </div> 
+            </div>
+            <div class="deco_img wow fadeInUp">
+                <img src="img/description-1.png" alt="접시데코">
+            </div>
+        </div>
+    </div><!--/#story-->
+    <div id="content_01">
+        <div class="main_01">
+            <div class="dark_01"></div>
+        </div>
+        <div class="main_02">
+            <div class="wrap_01">
+                <div class="header_01">
+                    <h2 class="impact">Special Dishes</h2>
+                    <p>BEST CHOICE</p>
+                </div>
+                <div class="content_01">
+                    <div class="outer_01">
+                        <div class="inner_01">
+                            <div class="cont_01">
+                                <h3 class="impact">pasta with olive</h3>
+                                <p>potato puree, aged cheddar & crunchy garnishes</p>
+                                <span>$47<small>.00</small> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer_02">
+                        <div class="inner_02">
+                            <div class="cont_02">
+                                <h3 class="impact">pasta with olive</h3>
+                                <p>potato puree, aged cheddar & crunchy garnishes</p>
+                                <span>$47<small>.00</small> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer_03">
+                        <div class="inner_03">
+                            <div class="cont_03">
+                                <h3 class="impact">pasta with olive</h3>
+                                <p>potato puree, aged cheddar & crunchy garnishes</p>
+                                <span>$47<small>.00</small> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer_04">
+                        <div class="inner_04">
+                            <div class="cont_04">
+                                <h3 class="impact">pasta with olive</h3>
+                                <p>potato puree, aged cheddar & crunchy garnishes</p>
+                                <span>$47<small>.00</small> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer_05">
+                        <div class="inner_05">
+                            <div class="cont_05">
+                                <h3 class="impact">pasta with olive</h3>
+                                <p>potato puree, aged cheddar & crunchy garnishes</p>
+                                <span>$47<small>.00</small> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div id="special">
+        <div class="top">
+            <div class="dark"></div>
+        </div>
+        <div class="bottom">
+            <div class="wrap">
+                <div class="title">
+                    <h2 class="impact">special dishes</h2>
+                    <p>best choice</p>
+                </div>
+                <div class="cont">
+                    <!--1번-->
+                    <div class="outer">
+                        <div class="inner">
+                            <h3 class="impact">pasta with olive</h3>
+                            <p>potato puree, aged cheddar & crunchy garnishes</p>
+                            <span class="impact price">$47<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                    <!--2번-->
+                    <div class="outer">
+                        <div class="inner">
+                            <h3 class="impact">shrimp dish</h3>
+                            <p>summer squash, tomatoes & nasturtium vinaigrette</p>
+                            <span class="impact price">$76<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                     <!--3번-->
+                     <div class="outer">
+                        <div class="inner">
+                            <h3 class="impact">noodle in sweet source</h3>
+                            <p>cucumbers, olives, goat cheese & mint</p>
+                            <span class="impact price">$35<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                     <!--4번-->
+                     <div class="outer">
+                        <div class="inner">
+                            <h3 class="impact">steak in love</h3>
+                            <p>smoked Butter & Lime</p>
+                            <span class="impact price">$105<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                     <!--2번-->
+                     <div class="outer">
+                        <div class="inner">
+                            <h3 class="impact">desert with bee</h3>
+                            <p>burrata cheese, arugula, balsamic vinegar, and basil</p>
+                            <span class="impact price">$23<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <a class="dishes_btn" href=""><img src="img/separator-img.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div class="wrap_02">
+            <div class="title_01">
+                <h3 class="impact">Dishes</h3>
+                <p>OUR MENU</p>
+            </div>
+            <div class="title_02">
+                <div class="box_01">» SOUPES & APPETIZERS «</div>
+                <div class="box_02">
+                    <div class="innerBx_01">
+                        <div class="menu_01">
+                            <h2>Fried breaded fillet of plaice</h2>
+                            <p>served with homemade remoulade and lemon</p>
+                            <span class="impact price">$22<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_02">
+                            <h2>Butter fried fillet of plaice</h2>
+                            <p>served with homemade remoulade, lemon and dill</p>
+                            <span class="impact price">$23<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_03">
+                            <h2>Fried fishcake</h2>
+                            <p>with homemade remoulade, lemon and dill</p>
+                            <span class="impact price">$27<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                    <div class="innerBx_02">
+                        <div class="menu_04">
+                            <h2>Chicken salad</h2>
+                            <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                            <span class="impact price">$24<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_05">
+                            <h2>Smoked salmon</h2>
+                            <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                            <span class="impact price">$33<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title_03">
+                <div class="box_01">» MAIN DISHES «</div>
+                <div class="box_02">
+                    <div class="innerBx_01">
+                        <div class="menu_01">
+                            <h2>Meatballs</h2>
+                            <p>served on rye bread with homemade pickled red cabbage and pickled cucumbers</p>
+                            <span class="impact price">$52<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_02">
+                            <h2>Creamed chicken and asparagus in crustade</h2>
+                            <p>Served with fried bacon and crispy chicken skin</p>
+                            <span class="impact price">$87<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_03">
+                            <h2>Slices of roasted pork</h2>
+                            <p>served with rye bread with homemade pickled red cabbage and pickled cucumbers</p>
+                            <span class="impact price">$56<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_04">
+                            <h2>Cod</h2>
+                            <p>carefully boiled, served with mustard sauce, boiled potatoes, pickled beetroot, chopped onions, chopped hard boiled eggs and fried bacon</p>
+                            <span class="impact price">$76<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                    <div class="innerBx_02">
+                        <div class="menu_05">
+                            <h2>PUK Maxi beef sandwich</h2>
+                            <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                            <span class="impact price">$64<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_06">
+                            <h2>Herrings with curry</h2>
+                            <p>served with gravy, fried onions and pickled cucumbers. Served with French fries and remoulade.</p>
+                            <span class="impact price">$69<small class="impact">.00</small></span>
+                        </div>
+                        <div class="menu_07">
+                            <h2>Minced beef</h2>
+                            <p>served with horseradish, raw onions, capers, pickled beetroots, pickled vegetables and raw egg yolk</p>
+                            <span class="impact price">$87<small class="impact">.00</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--정답-->
+    <div id="dishes">
+        <div class="wrap">
+            <div class="title">
+                <h2 class="impact">dishes</h2>
+                <p>our menu</p>
+            </div>
+            <div class="cont">
+                <div class="ca_title">
+                    <h3>&#187;SOUPES & APPETIZERS&#171;</h3>
+                </div>
+                <div class="detail">
+                    <div class="left wow fadeInLeft">
+                        <div class="menu_bx">
+                            <h4>Fried breaded fillet of plaice</h4>
+                            <p>served with homemade remoulade and lemon</p>
+                            <h5><span class="impact">$22<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Butter fried fillet of plaice</h4>
+                            <p>served with homemade remoulade, lemon and dill</p>
+                            <h5><span class="impact">$23<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Fried fishcake</h4>
+                            <p>with homemade remoulade, lemon and dill</p>
+                            <h5><span class="impact">$27<small class="impact">.00</small></span></h5>
+                        </div>
+                    </div>
+
+                    <div class="right wow fadeInRight">
+                        <div class="menu_bx">
+                            <h4>Chicken salad</h4>
+                            <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                            <h5><span class="impact">$24<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Smoked salmon</h4>
+                            <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                            <h5><span class="impact">$33<small class="impact">.00</small></span></h5>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="cont">
+                <div class="ca_title">
+                    <h3>&#187;SOUPES & APPETIZERS&#171;</h3>
+                </div>
+                <div class="detail">
+                    <div class="left wow fadeInLeft">
+                        <div class="menu_bx">
+                            <h4>Fried breaded fillet of plaice</h4>
+                            <p>served with homemade remoulade and lemon</p>
+                            <h5><span class="impact">$22<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Butter fried fillet of plaice</h4>
+                            <p>served with homemade remoulade, lemon and dill</p>
+                            <h5><span class="impact">$23<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Fried fishcake</h4>
+                            <p>with homemade remoulade, lemon and dill</p>
+                            <h5><span class="impact">$27<small class="impact">.00</small></span></h5>
+                        </div>
+                    </div>
+
+                    <div class="right wow fadeInRight">
+                        <div class="menu_bx">
+                            <h4>Chicken salad</h4>
+                            <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                            <h5><span class="impact">$24<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Smoked salmon</h4>
+                            <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                            <h5><span class="impact">$33<small class="impact">.00</small></span></h5>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="cont">
+                <div class="ca_title">
+                    <h3>&#187;SOUPES & APPETIZERS&#171;</h3>
+                </div>
+                <div class="detail">
+                    <div class="left wow fadeInLeft">
+                        <div class="menu_bx">
+                            <h4>Fried breaded fillet of plaice</h4>
+                            <p>served with homemade remoulade and lemon</p>
+                            <h5><span class="impact">$22<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Butter fried fillet of plaice</h4>
+                            <p>served with homemade remoulade, lemon and dill</p>
+                            <h5><span class="impact">$23<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Fried fishcake</h4>
+                            <p>with homemade remoulade, lemon and dill</p>
+                            <h5><span class="impact">$27<small class="impact">.00</small></span></h5>
+                        </div>
+                    </div>
+
+                    <div class="right wow fadeInRight">
+                        <div class="menu_bx">
+                            <h4>Chicken salad</h4>
+                            <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                            <h5><span class="impact">$24<small class="impact">.00</small></span></h5>
+                        </div>
+                        <div class="menu_bx">
+                            <h4>Smoked salmon</h4>
+                            <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                            <h5><span class="impact">$33<small class="impact">.00</small></span></h5>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="arrow">
+                <a class="services_btn" href=""><img src="img/separator-img.png" alt=""></a>
+            </div>
+
+            <div></div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="wrap">
+            <div class="title">
+                <h2 class="impact">we provide the following</h2>
+                <p>service</p>
+            </div>
+            <div class="cont">
+                <div class="menu_bx">
+                    <img src="img/sushi.png" alt="케이터링아이콘">
+                    <div class="detail">
+                        <h3>catering</h3>
+                        <p>Food is about celebration. It is comfort and memories, good times and sweet thoughts. Food is creativity and love.</p>
+                    </div>
+                </div>
+                <div class="menu_bx">
+                    <img src="img/pizza.png" alt="피자아이콘">
+                    <div class="detail">
+                        <h3>pizza holic</h3>
+                        <p>Bed of red and green oak lettuce, Kalamata olives, pepperoncinis, red onions, cherry tomatoes, cucumbers, feta cheese, oregano.</p>
+                    </div>
+                </div>
+                <div class="menu_bx">
+                    <img src="img/truck.png" alt="트럭아이콘">
+                    <div class="detail">
+                        <h3>24hour delivery</h3>
+                        <p>Our standard delivery fee depends on your distance from the chosen restaurant(s). Minimum orders are required for most delivery orders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <a href=""><img src="img/separator-img.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!--정답-->
+    <div id="service">
+        <div class="wrap">
+            <div class="title">
+                <h2 class="impact">We Provide the Following</h2>
+                <p>service</p>
+            </div>
+            <div class="cont">
+                <div class="box wowfadeInUp" data-wow-delay="1s">
+                    <div class="img_part">
+                        <img src="img/sushi.png" alt="케이터링">
+                    </div>
+                    <div class="txt_part">
+                        <h3>catering</h3>
+                        <p>Food is about celebration. It is comfort and memories, good times and sweet thoughts. Food is creativity and love.</p>
+                    </div>
+                </div>
+                <div class="box wow fadeInUp" data-wow-delay="1s">
+                    <div class="img_part">
+                        <img src="img/pizza.png" alt="피자">
+                    </div>
+                    <div class="txt_part">
+                        <h3>pizza holic</h3>
+                        <p>Bed of red and green oak lettuce, Kalamata olives, pepperoncinis, red onions, cherry tomatoes, cucumbers, feta cheese, oregano.</p>
+                    </div>
+                </div>
+                <div class="box wow fadeInUp" data-wow-delay="1.5s">
+                    <div class="img_part">
+                        <img src="img/truck.png" alt="트럭">
+                    </div>
+                    <div class="txt_part">
+                        <h3>24hour delievery</h3>
+                        <p>Our standard delivery fee depends on your distance from the chosen restaurant(s). Minimum orders are required for most delivery orders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <a class="offer_btn" href=""><img src="img/separator-img.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sub_title">
+        <div class="dark">
+            <div class="cont">
+                <div class="wrap">
+                    <div class="top_01">
+                        <h3 class="impact">subscribe for best offer</h3>
+                        <p>waiting for new dishes</p>
+                    </div>
+                    <div class="search_space">
+                        <div class="search_bx">
+                            <input type="text" placeholder="subscript@gmail.com">
+                            <button><i class="fab fa-telegram-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--정답-->
+    <div id="offer">
+        <div class="dark">
+            <div class="wrap">
+                <div class="table_center">
+                    <div class="title">
+                        <h2 class="impact">subscribe for best offer</h2>
+                        <p>waiting for new dishes</p>
+                    </div>
+                    <div class="cont">
+                        <div class="mail_bx">
+                            <input type="email" placeholder="subscript@gmail.com">
+                            <button type="submit"><i class="fab fa-telegram-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="register">
+        <div class="wrap">
+            <div class="mapBx">
+                <div id="map" class="js_map"></div>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMOwJdqgkxI6MQb4E95pSSBF1TABF5pZA&callback=initMap"></script>
+                <script>
+                function initMap() {var uluru = {lat: 37.498723292078985, lng: 127.02668356915773}; //lat(latitude, 위도), lng(longitude, 경도)//지도의 위치 구성 및 보기 설정
+                var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: uluru});
+                //지도를 통합하여 구성하겠다는 선언
+                var marker = new google.maps.Marker({ position: uluru, map: map });}
+                </script>
+            </div>
+            <div class="registerBx">
+                <div class="outer">
+                    <h2 class="impact">Register</h2>
+                    <div class="box_01">
+                        <input type="text" placeholder="ID">
+                        <input type="password" placeholder="PASSWORD">
+                        <input type="text" placeholder="PASSWORD CONFIRM">
+                        <input type="text" placeholder="E-MAIL">
+                        <input type="checkbox">&nbsp;send our info to your email
+                        <div class="submit">
+                            <button>SUBMIT</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--정답-->
+    <div id="register_01">
+        <div class="wrap">
+            <div class="left">
+                <div id="map"></div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h2 class="impact">Register</h2>
+                </div>
+                <div class="cont">
+                    <div class="input_line">
+                        <input type="text" placeholder="ID">
+                    </div>
+                    <div class="input_line">
+                        <input type="password" placeholder="PASSWORD">
+                    </div>
+                    <div class="input_line">
+                        <input type="password" placeholder="PASSWORD CONFIRM">
+                    </div>
+                    <div class="input_line">
+                        <input type="email" placeholder="E-MAIL">
+                    </div>
+                    <div class="input_line">
+                        <input type="text" placeholder="ID">
+                    </div>
+                    <input type="checkbox">&nbsp;Send our info to your email
+                </div>
+                <div class="btn">
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom_01">
+        <div class="wrap_01">
+            <div class="top_01">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="middle_01">
+                <h2 class="impact"><img src="img/logo-footer.png" alt=""></h2>
+            </div>
+            <div class="bottom_01">
+                <p>&copy;2021 KULINER.ALL rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="wrap">
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="f_logo">
+                <img src="img/logo-footer.png" alt="">
+            </div>
+            <p class="copyrights">&copy;2021 KULINER.ALL rights reserved.</p>
+        </div>
+    </div>
+
+    <div class="top_btn">
+        <a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+
+    <!--page-->
+</body>
+</html>
